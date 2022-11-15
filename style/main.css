@@ -23,7 +23,7 @@ img{
 .js .header{
     position: fixed;
     width: 100%;
-    z-index: 1;/* coloquei porque os icones das pessoas ficavam  por cima*/
+    z-index: 10;
 }
 
 .logo-text{
@@ -78,7 +78,55 @@ img{
     transition: max-height 1s;
 }
 
-
+.js .laptop-slider, .js .quote-container{
+    overflow: hidden;
+    color: white;
+}
+.js .laptop-slider .slideshow, .js .quote-slideshow{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    max-width: 950px;
+}
+.js .laptop-slider figure, .js .quote-slideshow figure{
+    opacity: 0;
+    transition: 1s opacity;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.js .laptop-slider figure.show, .js .quote-slideshow figure.show{
+    opacity: 1;
+    position: static;
+}
+.js .laptop-slider .prev, .js .laptop-slider .next, .js .quote-slideshow .prev, .js .quote-slideshow .next{
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    transition: color .5s ease-in-out; /* coloquei para hover */
+}
+.js .laptop-slider .prev, .js .quote-slideshow .prev{
+    left: 10px;
+}
+.js .laptop-slider .next, .js .quote-slideshow .next{
+    right: 10px;
+}
+/* eu mesmo coloquei */
+.js .laptop-slider .prev:hover,.js .laptop-slider .next:hover{
+    color: #48b9a1;
+}
+.js .quote-slideshow figure{
+    
+    margin: auto;
+}
+.js .quote-slideshow figure h2{
+    margin: 0;
+    padding: 0 80px;
+    box-sizing: border-box;
+    text-align: justify;
+}
 
 .hero{
     height: 80vh;
