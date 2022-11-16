@@ -91,11 +91,19 @@ img{
 .js .laptop-slider figure, .js .quote-slideshow figure{
     opacity: 0;
     transition: 1s opacity;
-    width: 100%;
     position: absolute;
+    width: 100%;
     top: 0;
     left: 0;
+    margin: auto;
+    /* adicionei */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* adicionei */
 }
+
 .js .laptop-slider figure.show, .js .quote-slideshow figure.show{
     opacity: 1;
     position: static;
@@ -116,17 +124,31 @@ img{
 /* eu mesmo coloquei */
 .js .laptop-slider .prev:hover,.js .laptop-slider .next:hover{
     color: #48b9a1;
-}
+}/* adicionei */
 .js .quote-slideshow figure{
-    
-    margin: auto;
-}
+    margin: 0 auto;
+}/* adicionei */
 .js .quote-slideshow figure h2{
     margin: 0;
     padding: 0 80px;
     box-sizing: border-box;
     text-align: justify;
+}/* adicionei */
+.js .quote-slideshow .prev, .js .quote-slideshow .next{
+    background-color: rgb(72, 185, 161);
+}/* adicionei */
+.js .quote-slideshow .prev{
+    padding: 5px 14px 3px 10px;
+    border-radius: 100%;
+}/* adicionei */
+.js .quote-slideshow .next{
+    padding: 5px 10px 3px 14px;
+    border-radius: 100%;
+}/* adicionei */
+.js .quote-slideshow .prev:hover, .js .quote-slideshow .next:hover{
+    color:#63c6ae;
 }
+
 
 .hero{
     height: 80vh;
@@ -136,7 +158,6 @@ img{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     background: linear-gradient(45deg, white 50%,transparent 50%) left calc(50% + 20px) bottom no-repeat, 
                 linear-gradient(-45deg, white 50%,transparent 50%) left calc(50% - 20px) bottom no-repeat,
                 url(../img/01.jpg);
@@ -182,10 +203,6 @@ abbr[title]{
 
 .people-cards{
     margin-top: 2.5em;
-}
-
-.people-cards__card{
-    
 }
 
 .people-cards__card:hover{
@@ -285,12 +302,19 @@ abbr[title]{
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-auto-rows: auto;
     grid-gap: 0;
-    background-color: yellow;
 }
 .last-articles__thumbs img{
     display: block;
     width: 100%;
+    /* adicionei */
+    filter: brightness(0.6); 
+    transition: .4s filter ease-in-out;
 }
+/* adicionei */
+.last-articles__thumbs img:hover{
+    filter: brightness(1);
+}
+
 
 
 
