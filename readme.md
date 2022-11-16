@@ -14,7 +14,7 @@ Landing page criada durante o curso de Web Design completo do professor Daniel T
 
 ### Screenshot
 
-![](./img/apresentacaoDesign.jpg)
+![](./images/design-screenshot.jpg)
 
 ### Links
 
