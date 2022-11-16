@@ -368,12 +368,19 @@ abbr[title]{
 
 .footer__links li{
     list-style: none;
+    /* adicionei */
+    width: 80px;
 }
 .footer__links a{
     color: #454e51;
     display: block;
     font-weight: 600;
     text-decoration: none;
+    /* adicionei */
+    transition: .3s color;
+}/* adicionei */
+.footer__links a:hover{
+    color: white;
 }
 
 .footer__logo{
